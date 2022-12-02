@@ -21,7 +21,10 @@ function App() {
           <BigCard image={driverImage} title="Our commitment to your safety" subtitle="With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users." link1="Read about our Community Guidelines" link2="See all safety features" />
           <BigCard image={citiesImage} title="Setting 10,000+ cities in motion" subtitle="The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home." link1="View all cities" />
         </div>
-        <SmallCards />
+        <div className='small-cards'>
+          <SmallCards />
+        </div>
+        
       </div>
       <div className='app-buttons-section'>
         <div className='app-buttons-innersection'>

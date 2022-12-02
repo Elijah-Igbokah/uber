@@ -10,7 +10,7 @@ const BigCard = (Props) => {
         </div>
         <h2 className='title'>{ Props.title }</h2>
         <p className='subtitle'> { Props.subtitle } </p>
-        <div>
+        <div className='links'>
             <a href="/">{ Props.link1 }</a>
             <a href="/">{ Props.link2 }</a>
         </div>

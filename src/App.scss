@@ -39,7 +39,11 @@
 .big-cards{
     display: flex;
     gap: 1.5rem;
+    padding: 64px 0px;
+}
 
+.small-cards{
+    padding: 64px 0px;
 }
 
 .app-buttons-section{
