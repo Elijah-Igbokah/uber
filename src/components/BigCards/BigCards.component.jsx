@@ -18,4 +18,4 @@ const BigCard = (Props) => {
   )
 }
 
-export default BigCard
+export default BigCard;
