@@ -1,0 +1,9 @@
+.small-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+
+    .small-card{
+        width: 30%;
+    }
+}

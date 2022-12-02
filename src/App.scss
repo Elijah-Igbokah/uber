@@ -1,0 +1,49 @@
+
+
+
+.for-business{
+        width: 100%;
+        background: url("./Images/HP-U4B-NYC-bkg (3).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    .for-business-container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+
+        h1{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+
+        p{
+            font-size: 1rem;
+            line-height: 24px;
+        }
+    }
+}
+
+.safety-section{
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.big-cards{
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.app-buttons-section{
+    width: 100%;
+    background: rgb(246,246,246);
+    padding: 64px 120px;
+}
