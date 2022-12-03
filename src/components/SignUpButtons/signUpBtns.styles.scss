@@ -1,11 +1,27 @@
 .sign-up-btn1, .sign-up-btn2{
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-bottom: 40px;
     border-bottom: 1px solid #000;
-    cursor: pointer;
+
+
+    &>a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
+        color: #000;
+
+        &:hover{
+            color: #333333;
+            
+            &>img{
+                filter: invert(17%) sepia(0%) saturate(1%) hue-rotate(314deg) brightness(98%) contrast(89%);
+            }
+            
+        }
+    }
+    
+    
     
 
     &>h1{
@@ -18,14 +34,7 @@
         font-size: 44px;
     }
 
-    &:hover{
-        color: #333333;
-        
-        &>img{
-            filter: invert(17%) sepia(0%) saturate(1%) hue-rotate(314deg) brightness(98%) contrast(89%);
-        }
-        
-    }
+    
 }
 
 // .sign-up-btn2{

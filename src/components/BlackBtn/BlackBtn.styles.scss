@@ -6,6 +6,10 @@
     border-radius: 8px;
     cursor: pointer;
 
+    &:hover{
+        background: #333333;
+    }
+
     a{
         font-weight: 500;
         color: #fff;

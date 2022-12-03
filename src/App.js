@@ -7,9 +7,11 @@ import SmallCards from './components/SmallCards/Smallcards.component';
 import AppLogoButtons from './components/AppLogoButtons/AppLogoButtons.component';
 import BlackBtn from './components/BlackBtn/BlackBtn.component';
 import SignUpButtons from './components/SignUpButtons/signUpBtns.component';
+import { HeroSection } from './components/Header/HeroSection/HeroSection.component';
 function App() {
   return (
     <div className="App">
+      <HeroSection/>
       <div className='for-business'>
         <div className='for-business-container'>
           <h1>Uber for business</h1>
@@ -33,8 +35,8 @@ function App() {
         </div>
       </div>
       <div className='sign-up-btns'>
-        <SignUpButtons class="sign-up-btn1" text="Sign up to drive"/>
-        <SignUpButtons class="sign-up-btn2" text="Sign up to ride"/>
+        <SignUpButtons class="sign-up-btn1" text="Sign up to drive" link="https://www.uber.com/signup/drive/"/>
+        <SignUpButtons class="sign-up-btn2" text="Sign up to ride" link="https://get.uber.com/sign-up/?marketing_vistor_id=7393493e-73ce-413d-9c71-c0c06eaa4f56&uclick_id=beb6cbc7-e264-4bd6-9677-92eeb59de581"/>
       </div>
       
 
