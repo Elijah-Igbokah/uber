@@ -42,12 +42,30 @@
     padding: 64px 0px;
 }
 
-.small-cards{
-    padding: 64px 0px;
-}
+
 
 .app-buttons-section{
     width: 100%;
     background: rgb(246,246,246);
     padding: 64px 120px;
+
+    .app-buttons-innersection{
+        &>h2{
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 700;
+            color: #333333;
+        }
+    }
+}
+
+.sign-up-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    width: 100%;
+    padding: 64px 120px;
+
+   
 }
