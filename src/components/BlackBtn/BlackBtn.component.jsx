@@ -4,7 +4,7 @@ import "./BlackBtn.styles.scss";
 const BlackBtn = (Props) => {
   return (
     <div className="BlackBtn">
-        <a href="/">
+        <a href={Props.link}>
             {Props.text}
         </a>
     </div>
