@@ -63,7 +63,7 @@ export class HeroSection extends React.Component {
             message = <div className='drive-deliver'>
                 <h1>Get in the driver's seat and get paid</h1>
                 <p>Drive on the platform with the largest network of active riders.</p>
-                <BlackBtn text="Sign up to drive" />
+                <BlackBtn text="Sign up to drive" link="https://www.uber.com/ng/en/s/e/join/" />
                 <a href="/">Learn more about driving and delivering</a>
             </div>;
             bgImage = bgImage1;
