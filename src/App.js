@@ -8,9 +8,12 @@ import AppLogoButtons from './components/AppLogoButtons/AppLogoButtons.component
 import BlackBtn from './components/BlackBtn/BlackBtn.component';
 import SignUpButtons from './components/SignUpButtons/signUpBtns.component';
 import { HeroSection } from './components/Header/HeroSection/HeroSection.component';
+import Footer from './components/Footer/footer';
+import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <HeroSection/>
       <div className='for-business'>
         <div className='for-business-container'>
@@ -20,6 +23,7 @@ function App() {
         </div>
       </div>
       <div className='safety-section'>
+        <h1>Focused on safety, wherever you go</h1>
         <div className='big-cards'>
           <BigCard image={driverImage} title="Our commitment to your safety" subtitle="With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users." link1="Read about our Community Guidelines" link2="See all safety features" />
           <BigCard image={citiesImage} title="Setting 10,000+ cities in motion" subtitle="The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home." link1="View all cities" />
@@ -38,12 +42,9 @@ function App() {
         <SignUpButtons class="sign-up-btn1" text="Sign up to drive" link="https://www.uber.com/signup/drive/"/>
         <SignUpButtons class="sign-up-btn2" text="Sign up to ride" link="https://get.uber.com/sign-up/?marketing_vistor_id=7393493e-73ce-413d-9c71-c0c06eaa4f56&uclick_id=beb6cbc7-e264-4bd6-9677-92eeb59de581"/>
       </div>
-      
-
-
-      
-      
-      
+      <div className=''>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -30,3 +30,21 @@
         }
     }
 }
+
+
+// RESPONSIVENESS
+
+@media only screen and (max-width: 1330px){
+    .app-logo-buttons{
+        flex-direction: column;
+
+        a{
+            width: 100%;
+
+            img{
+                width: 20%;
+                margin-right: 5%;
+            }
+        }
+    }
+}

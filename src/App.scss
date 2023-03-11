@@ -17,11 +17,17 @@
         gap: 24px;
         
 
+        // h1{
+        //     font-size: 28px;
+        //     font-weight: 700;
+        //     line-height: 36px;
+        // }
+
         h1{
-            font-size: 28px;
             font-weight: 700;
-            line-height: 36px;
-        }
+            font-size: 36px;
+            line-height: 44px;
+            }
 
         p{
             font-size: 1rem;
@@ -31,9 +37,11 @@
 }
 
 .safety-section{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 4rem;
+
+    
 }
 
 .big-cards{
@@ -65,7 +73,35 @@
     justify-content: space-between;
     gap: 32px;
     width: 100%;
-    padding: 64px 120px;
+    padding: 64px 120px;  
+}
 
-   
+.footer{
+    background: #000;
+}
+
+@media only screen and (max-width: 1330px){
+    .app-buttons-section{
+        padding: 64px 1rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1130px){
+
+    .safety-section{
+        padding: 4rem 1rem;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .big-cards{
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
 }

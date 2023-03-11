@@ -45,26 +45,13 @@ export class HeroSection extends React.Component {
             let first = document.getElementById("first");
             first.classList.add("option-border")
         }
-        // for (let menu of menuList) {
-        //     menu.addEventListener("click", function(){
-        //         // 1. Remove Class from All Lis
-        //         for (let menu of menuList) {
-        //           menu.classList.remove('option-border');
-        //           console.log('class removed');
-        //         }
-                
-        //         // // 2. Add Class to Relevant Li
-        //         // this.classList.add('option-border');
-        //         // console.log('class added');
-        //       });
-        // }
         
         if (currentState === "option"){
             message = <div className='drive-deliver'>
                 <h1>Get in the driver's seat and get paid</h1>
                 <p>Drive on the platform with the largest network of active riders.</p>
                 <BlackBtn text="Sign up to drive" link="https://www.uber.com/ng/en/s/e/join/" />
-                <a href="/">Learn more about driving and delivering</a>
+                <a href="https://www.uber.com/ng/en/drive/">Learn more about driving and delivering</a>
             </div>;
             bgImage = bgImage1;
             
@@ -74,21 +61,23 @@ export class HeroSection extends React.Component {
                     <p>Order delivery from restaurants you love.</p>
                     <div className='flex-link'>
                         <BlackBtn text="Order now" link="https://www.ubereats.com/?uclick_id=beb6cbc7-e264-4bd6-9677-92eeb59de581" />
-                        <a href="/">Own a restaurant? Partner with Uber Eats</a>
+                        <a href="https://www.ubereats.com/restaurant/signup/?uclick_id=beb6cbc7-e264-4bd6-9677-92eeb59de581">Own a restaurant? Partner with Uber Eats</a>
                     </div>
-                    
                 </div>;
             bgImage = bgImage3;
 
         } else {
-            message = <h1>RIDE</h1>;
+            message = <div className='drive-deliver'>
+            <h1>Request a ride now</h1>
+        </div>;
             bgImage = bgImage2;
         }
 
-
         return (
             <div className='hero'>
-                <img className='bg-image' src={bgImage} alt="" />
+                <div className='bg-image-wrap'>
+                    <img className='bg-image' src={bgImage} alt="" />
+                </div>
                 <div className='hero-menu'>
                     <div className='menu-btns'>
                         <button className='option' id='first' onClick={this.option} onLoad={LoadMenu}>
